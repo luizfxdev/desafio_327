@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Despertar da Guardiã e do Dragão</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de Background -->
+    <video class="background-video" autoplay loop muted playsinline>
+      <source src="assets/background.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <!-- Áudio de Background -->
+    <audio id="theme-audio" loop>
+      <source src="assets/theme.mp3" type="audio/mpeg" />
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <!-- Controles de Áudio -->
+    <div class="audio-controls">
+      <button id="play-audio" class="audio-btn" title="Tocar música">🎵</button>
+      <button id="pause-audio" class="audio-btn" title="Pausar música">⏸️</button>
+    </div>
+
+    <!-- Container Principal -->
+    <div class="container">
+      <h1 class="title">O Despertar da Guardiã e do Dragão</h1>
+      <p class="subtitle">Decifre o enigma dos portais místicos</p>
+
+      <!-- Input de Entrada -->
+      <div class="input-section">
+        <label for="portal-numbers">Números dos Portais:</label>
+        <input
+          type="text"
+          id="portal-numbers"
+          placeholder="Ex: 4, 2, 9, 10, 5, 8"
+          aria-label="Digite os números separados por vírgula"
+        />
+      </div>
+
+      <!-- Botões de Ação -->
+      <div class="button-section">
+        <button class="glow-on-hover" id="reveal-btn" type="button">REVELAR</button>
+        <button class="glow-on-hover" id="return-btn" type="button">RETORNAR</button>
+      </div>
+
+      <!-- Seção de Resultado -->
+      <div class="result-section" id="result-section">
+        <h2 class="result-title">Resultado da Jornada</h2>
+        <div class="result-content" id="result-content">
+          <!-- O resultado será inserido aqui via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
